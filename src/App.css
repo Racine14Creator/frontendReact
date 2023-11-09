@@ -1,9 +1,11 @@
 :root{
   --primary: coral;
   --secondary: blue;
-  --grey: #ccc;
+  --grey: #cccccc72;
   --red: red;
   --white: #fff;
+  --black: #000;
+  --black-500: #1e1e1e;
 }
 
 *{
