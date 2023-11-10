@@ -68,70 +68,30 @@ const Dashboard = () => {
         </div>
 
         <div className="activites">
-            <table className="table">
-                <thead>
-                    <th>Nom</th>
-                    <th>Modele</th>
-                    <th>Montant</th>
-                    <th>Date</th>
-                    <th>Status</th>
-                    <th>Actions</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Grace Bisimwa</td>
-                        <td>Air Force</td>
-                        <td>25k frw</td>
-                        <td>14 avril 2023</td>
-                        <td>Status</td>
-                        <td>
-                            <div className="group visible">
-                                <button className="button">checked</button>
-                                <button className="button">delete</button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Grace Bisimwa</td>
-                        <td>Air Force</td>
-                        <td>25k frw</td>
-                        <td>14 avril 2023</td>
-                        <td>Status</td>
-                        <td>
-                            <div className="group visible">
-                                <button className="button">checked</button>
-                                <button className="button">delete</button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Grace Bisimwa</td>
-                        <td>Air Force</td>
-                        <td>25k frw</td>
-                        <td>14 avril 2023</td>
-                        <td>Status</td>
-                        <td>
-                            <div className="group visible">
-                                <button className="button">checked</button>
-                                <button className="button">delete</button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Grace Bisimwa</td>
-                        <td>Air Force</td>
-                        <td>25k frw</td>
-                        <td>14 avril 2023</td>
-                        <td>Status</td>
-                        <td>
-                            <div className="group visible">
-                                <button className="button">checked</button>
-                                <button className="button">delete</button>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dom</td>
+                    <td>6000</td>
+                    <td>6000</td>
+                    <td>6000</td>
+                </tr>
+                <tr class="active-row">
+                    <td>Melissa</td>
+                    <td>5150</td>
+                    <td>5150</td>
+                    <td>5150</td>
+                </tr>
+            </tbody>
+        </table>
         </div>
         </div>
     </>
