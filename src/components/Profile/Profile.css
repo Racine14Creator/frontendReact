@@ -1,0 +1,138 @@
+.profile {
+    position: relative;
+    width: 100%;
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+    margin: 10px auto;
+    padding: 0 20px;
+    box-shadow: inset 10px 20px 20px rgba(255, 255, 255, 0.5);
+}
+
+
+
+.gridContent {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+.gridContent .item {
+    height: fit-content;
+    border-radius: .4rem;
+    border: 1px solid var(--grey);
+    padding: 10px;
+}
+
+
+
+.item h1,
+h2,
+h3 {
+    font-size: 35px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.data {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.element {
+    width: 100%;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin: 10px auto;
+}
+
+.element .profileImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 320px;
+    padding: 5px;
+    border: 1px solid var(--grey);
+    border-radius: 50%;
+}
+
+.element .profileImg img {
+    background-color: var(--black);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.element .name {
+    display: flex;
+    flex: 1;
+}
+
+.elementData {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.group label {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.group .input {
+    width: 100%;
+    padding: 10px;
+    border-radius: .4rem;
+    border: 1px solid var(--grey);
+    outline: none;
+}
+
+.button {
+    padding: 10px 20px;
+    outline: none;
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: .4rem;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 900px) {
+    .profile {
+        position: relative;
+        height: 100vh;
+        padding: 0;
+    }
+
+    .gridContent {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .element {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .elementData {
+        width: 100%;
+    }
+}

@@ -1,18 +1,31 @@
+
+import { Routes, Route, Outlet } from "react-router-dom"
 import Dashboard from "./Dashboard/Dashboard"
+import Profile from "./Profile/Profile"
 import Navbar from "./Navbar/Navbar"
+import Setting from "./settings/Setting"
+import About from "./about/About"
 
 const Main = () => {
   return (
     <div className="main">
-          <div className="header">
-            <Navbar/>
-          </div>
-          <div className="wrapper">
-            <Dashboard/>
-            
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus architecto nihil eum corrupti eius odit veniam aperiam ratione laborum nemo harum eligendi ut debitis natus, cum, ullam fuga deserunt repudiandae porro impedit, consequatur id. Nemo laborum itaque iste. Maxime vero ex placeat adipisci minima, perferendis voluptatem velit quisquam aut beatae quia tempora facere, iste quod at officia sequi amet corrupti. Nam aliquam veritatis at saepe impedit rem deserunt deleniti cum esse, hic ad officiis, fugit earum est, veniam laborum assumenda placeat amet quos vel expedita. Suscipit quibusdam aliquam veniam minus, magnam quos accusamus atque. Dignissimos minus expedita impedit provident at?</p>
-          </div>
+      <div className="header">
+        <Navbar />
+
+      </div>
+
+      <div className="wrapper">
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/settings" element={<Setting />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+        <div className="element">
+          <Outlet />
         </div>
+      </div>
+    </div>
   )
 }
 

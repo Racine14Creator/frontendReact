@@ -1,20 +1,23 @@
-
+import { Link } from "react-router-dom"
 const Navbar = () => {
+
   return (
     <nav className="navbar">
-              <a href="/">Dashboard</a>
-              <ul>
-                <li>
-                  <a href="#">Dashboard</a>
-                </li>
-                <li>
-                  <a href="#">Profile</a>
-                </li>
-                <li>
-                  <a href="#" className="danger">Logout</a>
-                </li>
-              </ul>
-            </nav>
+      <a href="/">Dashboard</a>
+
+      <div className="right">
+        <Link to="profile">
+          <img src="" alt="Profile" />
+        </Link>
+        <ul>
+          <li>
+            <a href="#" className="danger">Logout</a>
+          </li>
+        </ul>
+      </div>
+
+
+    </nav>
   )
 }
 

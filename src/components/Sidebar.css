@@ -1,11 +1,11 @@
-.list{
+.list {
     display: flex;
     flex-direction: column;
     max-height: calc(100vh - 80px);
     overflow-y: auto;
 }
 
-.list li a{
+.list li a {
     display: block;
     padding: 18px;
     margin: 5px 0;
@@ -15,7 +15,9 @@
     font-weight: 600;
     transition: all ease .3s;
 }
-.list li a:hover{
+
+.list li a.active,
+.list li a:hover {
     background-color: var(--grey);
     color: var(--black-500);
 }

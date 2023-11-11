@@ -1,26 +1,32 @@
-:root{
+:root {
   --primary: coral;
   --secondary: blue;
   --grey: #cccccc72;
-  --red: red;
+  --red: rgb(198, 37, 37);
   --white: #fff;
   --black: #000;
   --black-500: #1e1e1e;
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-body{
+
+a {
+  text-decoration: none;
+}
+
+body {
   height: 100%;
 }
-.flex{
+
+.flex {
   display: flex;
 }
 
-.sidebar{
+.sidebar {
   width: 23rem;
   height: 100vh;
   display: flex;
@@ -28,7 +34,7 @@ body{
   border-right: 1px solid var(--grey);
 }
 
-.header{
+.header {
   display: flex;
   align-items: center;
   padding: 10px;
@@ -36,20 +42,44 @@ body{
   border-bottom: 1px solid var(--grey);
 }
 
-.navbar{
+.navbar {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
 }
 
-.navbar ul{
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.right img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--black);
+  width: 32px;
+  height: 32px;
+  padding: 5px;
+  object-fit: cover;
+  border: 1px solid var(--grey);
+  border-radius: 50%;
+}
+
+.navbar ul {
   list-style: none;
   display: flex;
+  align-items: center;
+  gap: 1rem;
   margin-right: 20px;
 }
 
-.navbar ul li a{
+
+
+.navbar ul li a {
   text-decoration: none;
   padding: 10px;
   border-radius: .4rem;
@@ -59,27 +89,35 @@ body{
   transition: all ease 0.3s;
 }
 
-.navbar ul li a.active{
+.navbar ul li a.active {
   background-color: var(--grey);
 }
 
-.danger{
+.danger {
   background-color: var(--red);
   color: var(--white)
 }
 
-.navbar ul li a:hover{
+.navbar ul li a:hover {
   background-color: var(--grey);
 }
 
-.wrapper{
+
+
+.wrapper {
   padding: 10px;
 }
 
-.main{
+.main {
   position: relative;
   width: 100%;
   display: flex;
   flex: 1;
   flex-direction: column;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    display: none;
+  }
 }
