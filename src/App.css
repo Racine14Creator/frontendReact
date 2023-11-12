@@ -61,12 +61,16 @@ body {
   justify-content: center;
   align-items: center;
   background: var(--black);
-  width: 32px;
-  height: 32px;
-  padding: 5px;
+  width: 42px;
+  height: 42px;
   object-fit: cover;
   border: 1px solid var(--grey);
   border-radius: 50%;
+  transition: all ease .3s;
+}
+
+.right img:hover {
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 .navbar ul {

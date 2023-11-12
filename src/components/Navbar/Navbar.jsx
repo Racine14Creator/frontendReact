@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom"
+import profile from "../../assets/profile.jpg"
+
 const Navbar = () => {
 
   return (
@@ -7,7 +9,7 @@ const Navbar = () => {
 
       <div className="right">
         <Link to="profile">
-          <img src="" alt="Profile" />
+          <img src={profile} alt="Profile" />
         </Link>
         <ul>
           <li>

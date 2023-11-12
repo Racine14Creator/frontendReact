@@ -1,4 +1,5 @@
 import "./Profile.css"
+import profile from "../../assets/profile.jpg"
 
 const Profile = () => {
   return (
@@ -11,7 +12,7 @@ const Profile = () => {
             <div className="data">
               <div className="element">
                 <div className="profileImg">
-                  <img src="" alt="pofile image" />
+                  <img src={profile} alt="pofile image" />
                 </div>
                 <div className="name">
                   <h3>Username Name</h3>

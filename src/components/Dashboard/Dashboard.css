@@ -1,36 +1,36 @@
-.grid{
+.grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     margin: 5px;
 }
 
-.grid .item{
+.grid .item {
     border: 1px solid var(--grey);
     padding: 20px;
     border-radius: .4rem;
     cursor: pointer;
 }
 
-.grid .item h1{
+.grid .item h1 {
     font-size: 30px;
     font-weight: 800;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.grid .item p{
+.grid .item p {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.grid .item p span{
+.grid .item p span {
     font-size: 15px;
     font-weight: 600;
 }
 
-.grid-2{
+.grid-2 {
     position: relative;
     display: grid;
     width: 100%;
@@ -40,7 +40,7 @@
     margin: 10px 0;
 }
 
-.grid-2 .item-1{
+.grid-2 .item-1 {
     position: relative;
     display: block;
     width: 100%;
@@ -49,15 +49,44 @@
     border-radius: .4rem;
 }
 
+@media (max-width: 900px) {
+    .wrapper {
+        width: 100%;
+        display: block;
+        padding: 10px;
+    }
 
-.item-1 h3{
+    .grid {
+        position: relative;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    .grid-2 {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+.item-1 h3 {
     font-size: x-large;
     margin: 5px 0;
 }
-.item-1 h1{
+
+.item-1 h1 {
     font-size: x-large;
 }
-.cercle{
+
+.cercle {
     position: relative;
     display: flex;
     align-items: center;
@@ -67,7 +96,8 @@
     border-radius: .7rem;
     background-color: var(--red);
 }
-.cercle .path{
+
+.cercle .path {
     display: block;
     padding: 5px;
     height: 100%;
@@ -77,13 +107,13 @@
 
 
 @media (max-width: 1000px) {
-    .grid{
+    .grid {
         display: grid;
         grid-template-columns: 1fr;
     }
 }
 
-table.table{
+table.table {
     position: relative;
     width: 100%;
     border-collapse: collapse;
@@ -95,19 +125,19 @@ table.table{
     margin: 10px 0;
 }
 
-.table thead{
+.table thead {
     text-align: left;
     font-size: x-large;
 }
 
 .table,
 .table thead th,
-.table tbody tr td{
+.table tbody tr td {
     border: 1px solid var(--grey);
     padding: 10px;
 }
 
-.table tbody tr{
+.table tbody tr {
     padding: 10px;
 }
 
