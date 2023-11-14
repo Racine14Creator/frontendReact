@@ -7,7 +7,7 @@ const Profile = () => {
       <div className="profile">
         <div className="gridContent">
           <div className="item">
-            <h3>Welcome, "{"Username"}"</h3>
+            <h3 className="text-4xl font-bold">Welcome, "{"Username"}"</h3>
 
             <div className="data">
               <div className="element">
@@ -15,7 +15,7 @@ const Profile = () => {
                   <img src={profile} alt="pofile image" />
                 </div>
                 <div className="name">
-                  <h3>Username Name</h3>
+                  <h3 className="text-3xl uppercase ">Username Name</h3>
                 </div>
               </div>
 
