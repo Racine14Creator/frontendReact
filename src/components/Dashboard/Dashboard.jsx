@@ -39,7 +39,7 @@ const Dashboard = () => {
             <div className="grid-2">
                 <div className="item-1">
                     <h1>Personnels</h1>
-                    <div className="grid-2 bg-black">
+                    <div className="grid-2">
 
                         <div className="item-1">
                             <h3>Homme</h3>
